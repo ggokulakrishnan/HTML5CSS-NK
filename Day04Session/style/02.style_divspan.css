@@ -1,3 +1,12 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+li {
+    padding: 4px;
+}
+
 /* the interpretation is:  if an element is seen with an id of name (container) and which contains a HTML element (span) then apply
      the below styles 
 if only an id with the name container is available, with out any span element then no style will be applied

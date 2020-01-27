@@ -1,10 +1,18 @@
-
 /*line mode of comment inside .css file*/
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+li {
+    padding: 4px;
+}
 
 #idSelector {
     color: red;
 }
 
 .clsSelector {
-    color:purple;
+    color: purple;
 }
