@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 - Navigation, Article and Section</title>
+</head>
+<body>
+    <h1>Navigation, Article and Section</h1>
+    <div>
+        <ul>
+            <li type="1">nav Tags are used for navigations, when ever we need to make menu's then navigation tags need to be used</li>
+            <li type="1">the following tags are used with navigation (nav) Tag: (ul) (ol) and with ul or ol there is (li)</li>
+            <li type="1">When we view the example 1 in browser then appear one below the other; with the help of css we can bring in same line</li>
+            <li type="1">inside (nav) tag except input tag (which can be used only inside form) all other HTML elements can be used</li>
+            <br>  
+            <li type="1">(article) tag is used to wirite article, article also has three things (a) header, (b) body and (c) footer elements</li>
+            <li type="1">(article) has section tags, and a section can have any HTML element (shown in example 2)</li>
+            <li type="1">it is not mandatory that section should be used only inside the (article) tag</li>
+            <li type="1">it can be written outside (article) tag and just like any other independent HTML tag. Refer Example: 3</li>
+            <br> 
+            <li type="1">HTML 5 tags that we have studied above, from display/output perspective they are same. </li>
+            <li type="1">tags like nav, article, section that are mostly useful for the developers to find that inside HTML document an artice is starting here and it has n number of sections etc..</li>
+            <li type="1">In HTML 5 there are few tag which will not render any output in the browser, thay all are useful for developers</li>
+            <br> 
+            <li type="1">(aside) it is mainly used to display side bar tag</li>
+            <li type="1">except input any HTML tag can be used inside (aside) tag</li>
+        </ul>
+
+        <h3>HTML 5: nav, article and section Tag</h3>
+        <p>Example 1</p>
+        <nav>
+            <ul>
+                <li><a href="01.HTML5_Id_Class.html" target="_blank">Id and Class</a></li>
+                <li><a href="02.HTML5_Div_Span.html" target="_blank">Div and Span</a></li>
+                <li><a href="03.HTML5_Header_Footer.html" target="_blank">Header and Footer</a></li>
+            </ul>
+        </nav>
+
+        <p>Example 2</p>
+        <article>
+            <section>
+                header
+                <h5>this is (h1) tag which is inside article--section</h5>
+            </section>
+
+            <section>
+                body
+                <p>this is body element (p) tag which is inside article--section</p>
+            </section>
+            <section>
+                footer
+                <nav>
+                    <ul>
+                        <li><a href="01.HTML5_Id_Class.html" target="_blank">Id and Class</a></li>
+                        <li><a href="02.HTML5_Div_Span.html" target="_blank">Div and Span</a></li>
+                        <li><a href="03.HTML5_Header_Footer.html" target="_blank">Header and Footer</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </article>
+    </div>
+
+    <p>Example 3</p>
+    <section>
+        (section) tag can be directly used inside the body tag (non mandatory that it should be inside an article tag). Direct data
+    </section>
+
+    <section>
+        <p>(section) tag can be directly used inside the body tag. Data is placed inside (p) tag ie. section--p</p>
+    </section>
+
+    <p>Example 4</p>
+    <aside>
+        <p>(aside) bar tag is mainly used for side bar tag</p>
+    </aside>
+</body>
+</html>

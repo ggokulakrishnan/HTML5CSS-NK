@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 - ID and Class</title>
+
+    <!--link tag does not have closing tag-->
+    <link rel="stylesheet" href="style/01.style_idclass.css">
+
+    <!--only when using the style inline inside HTML file the <style> tag need to be used-->
+    <!--when this style is writted inside a .css file all styles can be written directly and no need for <style> tag inside the .css file-->
+    <style>
+        #idSelector {
+            color: red;
+        }
+
+        .clsSelector {
+            color:purple;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Id and Class</h1>
+
+    <p>
+        <ol>
+            <li type="1">&lt; link &gt; tag used in the head section of HTML document is used to link/connect this document to an another
+                document</li>
+            <li type="1">link tag does not have/require a closing tag</li>
+            <li type="1">rel = relationship</li>
+            <li type="1">rel="stylesheet" this is a predefined value</li>
+            <li type="1">relationship has many values and one of the value is stylesheet</li>
+            <li type="1">href="style.css" is linking stylesheet file we need to refer for this document</li>
+            <li type="1">to give style to an HTML element we use Id and Class</li>
+            <li type="1">"id": is an unique identification and can be used only once in a HTML document</li>
+            <li type="1">in the below example, id="idSelector" is called id selector</li>
+            <li type="1">the # (hash) symbol, is used to represent an id</li>
+            <li type="1">"class": is a global identification and can be used multiple times in a HTML document</li>
+            <li type="1">in the below example, class="clsSelector1" is called class selectors</li>
+            <li type="1">the . (dot) symbol, is used to represent a class</li>
+            <li type="1">the prefix of class and id (. and #) need to applied only inside style (inline) or 
+                css (Ext. file) and not inside HTML element section</li>
+        </ol>
+    </p>
+
+    Example of using "id" attribute: <br>
+    <p id="idSelector">
+        (a) id is an unique identification and can be used only once in a HTML document <br>
+        (b) when defining the style they are represented with # (hash) symbol <br>
+        (c) at the place of calling the style (in HTML element) the # symbol should not be used <br>
+        (d) Example (while defining): #idSelector { color: red; } <br>
+        (e) Example (while calling): id="idSelector" (or)  &lt;p id="idSelector"&gt;&lt;/p&gt;
+    </p>
+
+    Example of using "class" attribute: <br>
+    <p class="clsSelector">
+        (a) class is global identifier and can be used mutiple times in a single HTML document 
+    </p>
+
+    <p class="clsSelector">
+        (a) when defining the style they are represented with . (dot) symbol
+    </p>
+
+    <p class="clsSelector">
+        (a) at the place of calling the style (in HTML element) the . symbol should not be used 
+    </p>
+
+    <span class="clsSelector">
+        Example  (while defining): .clsSelector { color:purple; }
+    </span>
+
+    <div class="clsSelector">
+        Example  (while calling): class="clsSelector" (or)  &lt;p class="clsSelector"&gt;&lt;/p&gt;
+    </div
+</body>
+
+</html>

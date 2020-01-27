@@ -1,0 +1,23 @@
+/* the interpretation is:  if an element is seen with an id of name (container) and which contains a HTML element (span) then apply
+     the below styles 
+if only an id with the name container is available, with out any span element then no style will be applied
+this is just like an AND condition in truth table, when both are satisfied then apply the style else style will not be applied
+*/ 
+#container span {
+    font-weight: bold;
+    color: red;
+}
+
+/* here .bold is a class and #container is an id */ 
+/* the interpretation is:  if an element is seen with an id of name (container) and class of name (span) then apply
+     the below styles  */
+#container .bold {
+    font-weight: bold;
+    color: navy;
+}
+
+/* instead of using it as class and id we can directly call the html elements */ 
+div span {
+    font-weight: bold;
+    color: greenyellow;
+}

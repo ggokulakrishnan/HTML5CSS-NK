@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 - Div and Span</title>
+
+    <!--link tag does not have closing tag-->
+    <link rel="stylesheet" href="style/02.style_divspan.css">
+</head>
+
+<body>
+    <h1>Div and Span</h1>
+    <div>
+        <ul>
+            <li type="a">div is a block level element (which means it will cover the entire width of the page)</li>
+            <li type="a">div, is basically a container which will hold all other html elements</li>
+            <li type="a">during initial days tables were used to make page layouts, but now a days during dynamic sites
+                div is used extensively</li>
+            <li type="a">except mail templates, we use div in all the places. Mailer does not supports div, we use
+                tables even today</li>
+            <li type="a">div, is mostly used in combination with css (style sheet), java scripts etc..</li>
+            <li type="a">in the example below: div id="container": where container is a class (style)</li>
+            <li type="a">in this sxample we will use an external css using (link) tag and it will be placed in the
+                (head) section</li>
+            <li type="a">span, is used inline (eg) inside a paragraph tag and it is used for styling</li>
+            <li type="a">in the below example we have created a (p) tag and added inline (span) tag</li>
+            <li type="a">using external stylesheet we will add style to the (span) tag</li>
+            <li type="a">#container span { } (-- create a new style similar to this, because our span is inside the
+                container and make the data inside span tag to bold and font with blue in color</li>
+            <li type="a">in css to bold an element we use the property: font-weight: bold; and now run it</li>
+            <li type="a">an other way to bring the same style is as below:</li>
+            <li type="a">#container .bold { font-weight: bold; } </li>
+            <li type="a">(span class="bold") this is a span tag ...</li>
+            <li type="a">an other way to bring the same style is as below:</li>
+            <li type="a">div span { font-weight: bold; }</li>
+            <li type="a">the third style option is not recommended because, in a page if there are multiple div and span
+                then the same style will be applied to all of them</li>
+            <li type="a">hence the best option is to use id and class format</li>
+            <li type="a">interpretation: #container span { font-weight: bold; }  </li>
+            <li type="a">if an element is seen with an id of name (container) and which contains a HTML element (span) then apply
+                the below styles </li>
+            <li type="a">if only an id with the name container is available, with out any span element then no style will be applied</li>
+            <li type="a">this is just like an AND condition in truth table, when both are satisfied then apply the style else style will not be applied</li>
+        </ul>
+    </div>
+
+    <h1>hands-on: using Div and Span Tag in HTML 5</h1>
+
+    <div id="container">
+        <p>this is a paragraph tag and <span>this is a span tag used in styling inline elements (using id and HTML
+                element in stylesheet)</span></p>
+    </div>
+
+    <!--this is considered as the recommended option-->
+    <div id="container">
+        <p>this is a paragraph tag and <span class="bold">this is a span tag used in styling inline elements (using id
+                and class for HTML element in stylesheet)</span></p>
+    </div>
+
+    <div>
+        <p>this is a paragraph tag and <span>this is a span tag used in styling inline elements (using direct html
+                element in stylesheet)</span></p>
+    </div>
+
+    <div id="container">
+        <p>this is a paragraph tag and this is a span tag used in styling inline elements (using id and HTML
+                element in stylesheet)</p>
+    </div>
+</body>
+
+</html>
