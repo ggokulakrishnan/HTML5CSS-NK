@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descident Selector</title>
+
+    <link href="style/base.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <ol>
+            <li>Descident is nothing but the child of parent</li>
+            <li>(h2) is the Descident of (div) and (em) is Descident of (p)</li>
+            <li>here is this a parent and child relation</li>
+            <li>if we traverse from parent to child element then we can select the required element and the style 
+                will be applied only to that particular element and not to any other element</li>
+            <li>In Descident selector one is css class/id and other is HTML element</li>
+            <li>Only in group selectors comma will be used, in Descident selector a space will be used</li>
+            <li>group selector is applied between two classes where Descident selector is applied within a class/hierarchy</li>
+            <li>Now that both the (em) values are set to green in color due to Descident selector</li>
+            <li>.primary-box p em { color: seagreen; }</li>
+            <li>Now we have a condition where the first primary-box em value should be orange and the second 
+                primary-box em value should be greem </li>
+            <li>to achieve assign a class name to first (em) </li>
+            <li>There is some text (em class="white")in the box</em> </li>
+            <li>In css file create a Descident selector as </li>
+            <li>.primary-box p .white { color: white; }</li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <div class="primary-box">
+        <h2>First Primary Box</h2>
+        <p>There is some text <em class="white">in the box</em></p>
+    </div>
+
+    <div class="secondary-box">
+        <h2>First Secondary Box</h2>
+        <p>There is some text <em>in the box</em></p>
+    </div>
+
+    <div class="primary-box">
+        <h2>Second Primary Box</h2>
+        <p>There is some text <em>in the box</em></p>
+    </div>
+
+    <div class="secondary-box">
+        <h2>Second Secondary Box</h2>
+        <p>There is some text <em>in the box</em></p>
+    </div>
+
+</body>
+
+</html>

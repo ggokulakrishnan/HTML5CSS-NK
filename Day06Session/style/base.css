@@ -1,0 +1,52 @@
+/* Id selector */
+
+body {
+    background: yellow;
+}
+
+#inside {
+    background: #fff;
+}
+
+#outside {
+    background: #fff;
+}
+
+/* Class selector */
+
+.primary-box {
+    background: orange;
+    color: navy;;
+}
+
+.secondary-box {
+    background: palegreen;
+    color: navy;
+}
+
+/* Group selector */
+
+/* Consider an example, where we need to keep the font size of primary and secondary box same */
+/* common property is put as group */
+.primary-box, .secondary-box {
+    font-size: 19px;
+}
+
+/* Descendent selector */
+
+.primary-box h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+}
+
+.primary-box p {
+    color: red;
+}
+
+.primary-box p em {
+    color: seagreen;
+}
+
+.primary-box p .white {
+    color: white;
+}
