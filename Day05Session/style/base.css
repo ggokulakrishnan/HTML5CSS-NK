@@ -1,0 +1,24 @@
+body {    
+    font-family: Helvetica; /* it is important that the font which we are defining here should be present in the system/server */
+    background-color: #ffabcd;
+    color: navy; /* all font of the HTML document will be red in color */
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0; /* for a box type element the margin is used outside */
+    padding: 0; /* for a box type element padding is used inside the box */
+}
+
+p {
+    font-style: italic; /* the text inside the paragraph elemetn will be displayed in italics font */
+}
+
+em {
+    color: black;
+}
+
+ol {
+    border-top: solid 1px green;
+    border-bottom: dashed 1px green;
+}

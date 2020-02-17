@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 3 Introduction</title>
+</head>
+
+<body>
+    <h1>CSS 3 Introduction</h1>
+
+    <div>
+
+        <ol>
+            <li type="1">CSS contains rules for style, in simple terms CSS is used to make the HTML less ugly</li>
+            <li type="1">In HTML we used to call them as <strong>HTML tags</strong> but in CSS we used to call them as <strong>selectors</strong></li>
+            <li type="1">The below is an example of CSS tag <br>
+                h1 { <br>
+                &nbsp;    font-size: 24px; <br>
+                &nbsp;    font-family: Helvetica; <br>
+                &nbsp;    color: blue; <br>
+                }
+            </li>
+            <li type="1">From the start of h1 to end of } (curly braces) is called a selector</li>
+            <li type="1">The content written inside the selector are called as properties</li>
+            <li type="1">h1 is an HTML element, hence it is called <strong>HTML selector</strong> (or) HTML 5 selector</li>
+            <li type="1">Conside the below example <br>
+                page-settings { <br>
+                    &nbsp;    font-size: 28px; <br>
+                    &nbsp;    color: yellow; <br>
+                }
+            </li>
+            <li type="1">Here the name of the selector is: page-settings and this is called as <strong>class Selector</strong></li>
+            <li type="1">Here (font-size) is the property and its value is 28, where as in HTML 5 it is called as attribute and value</li>
+            <li type="1">A property should always end with colon (:) and value should always end with semi-colon (;)</li>
+            <li type="1">(;) indicates that the commend is completed</li>
+            <li type="1"><strong>Inheritance of Style</strong>: Consider the below HTML tag</li>
+            <li type="1">
+                <h1>Hey, <em>look</em> at that monkey</h1> 
+            </li>
+            <li type="1">the above full line is called HTML element, inside h1 we have used a sub tag called em tag, which is child of h1 tag</li>
+            <li type="1">Here h1 tag is the parent of em tag <br>
+                Consider a scenario where we have given blue color to HTML tag and if no color is specified for the em tag then the
+                 entire h1 tag content will be blue color</li>
+            <li type="1">
+                <h1 style="color: blue;">Hey, <em>look</em> at that monkey</h1> 
+            </li>
+            <li type="1">Now consider that we are giving em tag a different css color, em tag will now have the color defined in em tag and not in h1 tag</li>
+            <li type="1">
+                <h1 style="color: blue;">Hey, <em style="color: red;">look</em> at that monkey</h1> 
+            </li>            
+        </ol>
+    </div>
+
+    <h1>Picels, Percentage, Points and Ems</h1>
+    <div>
+        <ol>
+            <li type="1">Points is rarely used as it mainly used for printing purpose</li>
+            <li type="1">Example <br>
+                h1 { <br>
+                &nbsp;    font-size: 24px; <br>
+                &nbsp;    width: 50%; <br>
+                &nbsp;    padding: 2em; <br>
+                }
+            </li>
+            <li type="1">em: is also its full and short form, consider M of english letter the size of em is equal to the width of one capital M letter</li>
+            <li type="1">Calculation: 1 em is equal to 16 px by default</li>
+            <li type="1">in the above example we have given font-size as 24px; then the padding size is 24 X 2 = 48px (here 1 em is 24px)</li>
+            <li type="1">if the css property font-size as 24px; is not declared then the size of em is 32px; (here 1 em is 16px)</li>
+            <li type="1">so, em depends on font-size property</li>
+            <li type="1">In responsive design px are not used but (%) is used, for any specific HTML element where size need to be same then (px) is used</li>
+            <li type="1">18:36</li>
+            <li type="1"></li>                     
+        </ol>
+    </div>
+</body>
+
+</html>

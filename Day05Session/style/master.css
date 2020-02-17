@@ -1,0 +1,62 @@
+body {
+    background: khaki;
+    font-family: Georgia, Times, Serif; /* Georgia and Times are from font family Serif, they are system type font */
+    /* in the previous stylesheet (base.css), the Helvetica is from font family San Serif type */
+    color: blueviolet; /* represents the color of text font used in HTML document */
+    font-size: 20px;
+}
+
+/*the font and color applied by the (body selector) will be overridden here (only for h1 selector)*/
+
+h1, h2 { /* this is called group selector, common properties for h1 and h2 */
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+}
+
+/* in the above h1, h2 selector common attributes are applied to HTML element h1 and h2 */
+/* we need to have few distinct properties for h1 element alone for the same create a new h1 sector */
+
+h1 {
+    border: dashed 1px brown;
+    background: darkblue;
+    /* the text is touching the border, let give some space between using padding (inside) */
+    padding: 10px;
+    margin: 20px; /*from left margin leave 20px and then start with h1 html element*/
+    color: white;
+}
+
+ol {
+    border: solid 1px blue;
+    background: yellow;
+
+    /* with padding if all four sides are of same value then we can use as we did previously padding: 20px */
+    /* if we need to apply different padding values (top, right, bottom, left) is the value combination */
+
+    padding: 20px 20px 20px 60px; /* top right bottom left */
+
+    /* now lets give margin, the top and bottom are same values and left and right are same value */
+    margin: 5% 0; /* (top and bottom) (left and right) */
+
+    /* now lets hide the 1, 2, 3 ... (indents) */
+    list-style-type: none;
+}
+
+/* now if we want all the (li) to be listed horizontally, apply the css to (li) tag */
+li {
+    /* (li) is block level element */
+    display: inline; /* all the li will be horizontally arranged */
+
+    /* the opposite of inline is block and its equivalent html tag is (br) */ 
+    /* image tag is inline :: display: block */
+
+    /* inline: one after the another */
+    /* block: one below the another (HTML equivalent: (br)) */
+
+    /* now to apply space between the inline element (add additional space between horizontal menu items), lets add margin */
+    margin: 20px;
+}
+
+/* lets change the color of the link to white (now blue color) */
+a {
+    color: white;
+}
