@@ -1,0 +1,54 @@
+#container {
+    width: 600px;
+    margin: 0 auto; /* 0 top and bottom, auto left and right */
+    /* auto: content will come in centre */ 
+}
+
+form {
+    /* here the bg-image is repeating */
+    background-image: url("../image/Y1.png");
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form fieldset {
+    /* single and double quotes can be used, best practise double quote is best */
+    background-image: url('../image/Y2.png');
+    padding: 40px;
+    border: solid 1px white;
+}
+
+form legend {
+    border: solid 1px #333;
+    background-image: url("../image/Y2.png");
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* this is group selector */
+/* if form has an id then instead of form we can use the id below */
+/* input and textarea are inline type of tag, we are making them as block-level element (one element per line) */
+form input, form textarea {
+    display: block; /* this will make inline element as block-level element */
+    margin-top: 5px; /* vspace between Name (label) and textbox is 5px */
+    margin-bottom: 20px;
+    padding: 10px; /* vspace between name textbox to label (email) */
+    color: white; /* text color white */
+    font-size: 20px;
+    background-image: url("../image/Y1.png");
+    border: solid 1px white;
+}
+
+form textarea {
+    height: 50px;
+}
+
+/* in HTML by default the button text is centre aligned */
+form fieldset #submit {
+    padding: 10px;   
+    width: 200px; 
+    margin-top: 40px;
+    cursor: pointer;
+    text-align: left;
+}

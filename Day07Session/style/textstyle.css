@@ -1,0 +1,33 @@
+/* reset browser borders */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+body {
+    padding: 40px;
+    font-family: Georgia, Times, serif;
+    color: #353535;
+}
+
+h1, h2, h3 {
+    font-size: 3em; /* this is equivalent to 60px (3em and 20px (already defined for html doc *) = 60px) */
+}
+
+blockquote {
+    margin: 0 0 30px; /* top | left right |  */
+    text-indent: 80px; /* create indent */
+    font-style: italic;
+}
+
+span {
+    /* text-decoration: capitalize; */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+em {
+    text-transform: capitalize;
+}

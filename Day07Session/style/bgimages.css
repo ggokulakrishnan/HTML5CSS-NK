@@ -1,0 +1,30 @@
+.bg-example {
+    height: 100px; /* height of box 100px */
+    width: 200px;
+    border: solid 1px red;
+}
+
+#background-1 {
+    background-image: url("../image/apple-logo.png"); /* relative path */
+    /* repeatition of the image is happening at X and Y axis automatically */
+    /* background-image default property repeat */
+}
+
+#background-2 {
+    background-color: tomato;
+}
+
+#background-3 {
+    background-image: url("../image/apple-logo.png"); /* relative path */
+    background-repeat: no-repeat;
+    /* by default it will be top left for the image */
+    /* to make the image appear at the centre of the div use the below poperty */
+    background-position: center center; /* x-axis centre and y-axis centre */
+}
+
+#background-4 {
+    background: url("../image/apple-logo.png") bottom left repeat-x;
+    /* this image in the bg will be repeated from bottom left towards X-axis */
+
+    /* background: url("../image/apple-logo.png") top left repeat-y; */
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag Style</title>
+
+    <!-- refer to external style sheet page in the project folder -->
+    <link href="style/base.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <!-- the style of id container is applied only to the div and not to any of the elements inside the div -->
+        <h1>Styling CSS form</h1>
+        <form>
+            <fieldset>
+                <legend>Contact Us</legend>
+                
+                <label for="txtContactName">Name: </label>
+                <input type="text" id="txtContactName">
+                
+                <label for="txtContactEMail">EMail: </label>
+                <input type="email" id="txtContactEMail">
+
+                <label for="txtContactMessage">Message: </label>
+                <textarea type="text" id="txtContactMessage"></textarea>
+
+                <input type="submit" value="Send Message" id="submit">
+
+            </fieldset>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

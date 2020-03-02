@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+
+    <!-- refer to external style sheet page in the project folder -->
+    <link href="style/base.css" rel="stylesheet">
+
+</head>
+<body>
+    <ol>
+        <li type="a">Think all the elements of HTML appearing as a box in a page</li>
+        <li type="a">Both inline and Block level elements occupy a box</li>
+        <li type="a"><span class="uline">inline HTML element</span>: do not occupy the fill width of the page</li>
+        <li type="a"><span class="uline">block level HTML element</span>: they occupy the full width of the page</li>
+        <li type="a">all the boxes has margin, padding and border</li>
+        <li type="a">block level elements have width property whereas</li>
+        <li type="a">inline level elements do not have width property</li>
+        <li type="a">In the below image, consider the element (2nd box) which is our element</li>
+        <img src="image/paddin-margin.png" width="30%" height="30%" alt="understading padding and margin of HTML element">
+        <li type="a">Padding: the inner part of a html element is called as padding</li>
+        <li type="a">margin: the outer part of html element is called as margin</li>
+        <li type="a">inline elements: they do not display vertical margin</li>
+        <li type="a">but they display left and right margin (did not understand)</li>
+        <li type="a">Margin can be defined as follows: <br>
+            margin-top: 10px; <br>
+            margin-right: 10px; <br>
+            margin-bottom: 10px; <br>
+            margin-left: 10px; <br>
+
+            <br>
+            <img src="image/paddin-margin-syntax0.png" alt="margin syntax">
+        </li>
+        <li type="a">if all sides of the box are of same width (which means we need to give 10px space to top, right, bottom and left</li>
+        <li type="a">then it can be written as: <br>
+            margin: 10px; <br> 
+            <br>
+            <img src="image/paddin-margin-syntax0.1.png" alt="margin syntax">
+        </li>
+        
+        <li type="a">There is an another way to write the margin values in single row <br>
+            margin: 0 10px 20px 30px; <br>
+            Here <br>
+            0: represents top <br>
+            10px: represents right <br>
+            20px: represents bottom <br>
+            30px: represents left <br>
+
+            <br>
+            <img src="image/paddin-margin-syntax1.png" alt="margin syntax">
+        </li>
+        <li type="a">padding also behaves the same instead of margin use padding with above syntax</li>
+        <li type="a">There are few other ways of representation (2 value representation</li>
+        <li type="a">margin: 0 10px; <br>
+            Here <br>
+            0: represents top and bottom and <br>
+            10px: represents left and right <br>
+            
+            <br>
+            <img src="image/paddin-margin-syntax2.png" alt="margin syntax">
+        </li>
+        <li type="a">margin and padding (3 value representation)</li>
+        <li type="a">margin: 0 10px 20px; <br>
+            Here <br>
+            0: represents top <br>
+            10px: represents left and right and <br>
+            20px: represents bottom <br>
+
+            <br>
+            <img src="image/paddin-margin-syntax3.png" alt="margin syntax">
+        </li>
+        <li type="a"><span class="fbold">borders</span>: also work the same way as margin and padding</li>
+        <li type="a">borders have three property (style width and color) <br>
+            border-style: solid; (other style: single line, double line, dotted, dashed) <br>
+            border-width: 4px; <br>
+            border-color: #333; <br>
+
+            <br>
+            <img src="image/border-style1.png" alt="border syntax">
+        </li>
+        <li type="a">alter option to write the border in single line <br>
+            border: solid 1px red; <br>
+
+            <br>
+            <img src="image/border-style2.png" alt="border syntax">
+        </li>
+        <li type="a">In border it is non mandatory to write the border in same order of representation (style, width and color)</li>
+        <li type="a">the values can be interchanged also</li>
+        <li type="a">border: solid red 1px;</li>
+        <li type="a">borders once defined can also be overridden <br>
+            border: solid 1px red; <br>
+            border-bottom: green; <br>
+        
+            Here the order color is defined as red and then only the bottom-border is defined with green color 
+        </li> 
+    </ol>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* browser reset */
+
+* { /* * --> represents apply the property to full HTML document */
+    margin: 0;
+    padding: 0;
+}
+
+/*
+#box-1 {
+    background: #eee;
+    margin: 0 0 26; 
+    padding: 20px; 
+    width: 300px;
+}
+*/
+
+/* instead of reperating the id prop again and agin put every thing in class and call the call in all the div */
+/* common properties are put in class where as unique/individual identity are put in id */
+.border-box {
+    background: #eee;
+    margin: 0 0 20px; /* 0 top 0 left & right 20px bottom */
+    padding: 20px; /* 20px all sides */
+    width: 300px;
+}
+
+/* common properties are put in class where as unique/individual property are put in id */
+/* if a HTML element has class and id, then class will be applied first and then the id will be applied next */
+#box-1 {
+    border: solid 1px #000;
+    background: red;
+}
+
+#box-2 {
+    border: dashed 1px #000;
+}
+
+#box-3 {
+    border: dotted 1px #000;
+}
+
+#box-4 {
+    border: double 1px #000; /* double line border */
+}
+
+#box-5 {
+    border: solid 4px #000;
+}
+
+#box-6 {
+    border: dashed 4px #000;
+}
+
+#box-7 {
+    border: dotted 4px #000;
+}
+
+#box-8 {
+    border: double 4px #000;
+}
